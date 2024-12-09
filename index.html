@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raka Kamara | Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/2f6e580d84.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <!-- container -->
+    <div class="container">
+        <nav>
+            <img src="./images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            
+            <p >WEB DEVELOPER</p>
+            <h1>
+                Hey there! I'm  <span>Raka</span> <br/>Kamara From Bangladesh
+            </h1>
+        </div>
+       
+    </div>
+   </div>
+
+   <!-- about -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/logo.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>A passionate web developer with hands-on experience in JavaScript, React, Node.js, MongoDB, and responsive UI frameworks. I am eager to bring my web development skills to a supportive organization, helping build great websites and taking on new challenges to grow with the team</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Development:</span><br/>  HTML, CSS, Bootstrap, Tailwind CSS, JavaScript(ES6+), React
+                            </li>
+                            <li><span>Back-End Development:</span><br/> Node.js, Express.js
+                            </li>
+                            <li> <span>Database:</span><br/> MongoDB, Firebase</li>
+                            <li><span>Version Control:</span><br/> Git, GitHub</li>
+                            <li><span>Other Tools:</span><br/> REST API,  Agile/Waterfall methodologies</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Dec 2024- Current</span><br/>Front-End Shopify Developer
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Jan 2020- Aug 2024</span><br/>B.Sc in CSE from <br/> East West University
+                            </li>
+                            <li><span>Jan 2024- Jun 2024</span><br/>Complete Web Development  at <br/> Programming Hero
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>We Design</h2>
+                    <p>I specialize in crafting modern, responsive, and user-friendly web solutions. Whether it’s Shopify storefronts, custom websites, or interactive UI components, I bring designs to life with clean code and attention to detail.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX</h2>
+                    <p> I create intuitive and visually appealing UI/UX designs that enhance user experiences. From wireframes to interactive prototypes, I focus on usability and aesthetics to deliver seamless digital solutions.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- portfolio -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/chef'sPlace.png" alt="">
+                    <div class="layer">
+                        <div class="links">
+                            <h3>Chef's Place</h3>
+                            <a target="_blank" href="https://chefsplace-80456.web.app"><i class="fa-solid fa-link"></i></a>
+                            <a target="_blank" href="https://github.com/raka-kamara/MERN-Project-RoleBased-11"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <p>A full-stack culinary platform for discovering a variety of recipes
+                            <br/><br/>Technologies: ReactJS, Tailwind, Node.js, MongoDB, Firebase, Express.js, Stripe etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/desktop.png" alt="">
+                    <div class="layer">
+                        <div class="links">
+                            <h3>JobBridge</h3>
+                            <a target="_blank" href="https://picoworkers-9e520.web.app"><i class="fa-solid fa-link"></i></a>
+                            <a target="_blank" href="https://github.com/raka-kamara/JobBridge"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <p>A role-based microjob web platform 
+                            
+                            <br/><br/>Technologies: ReactJS, Tailwind, Node.js, MongoDB, Firebase, Express.js, Stripe etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/flour.png" alt="">
+                    <div class="layer">
+                    <div class="links">
+                        <h3>FlouriciousBites</h3>
+                        <a target="_blank" href="https://restaurant-management-4fdac.web.app"><i class="fa-solid fa-link"></i></a>
+                        <a target="_blank" href="https://github.com/raka-kamara/JobBridge"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <p>A role-based microjob web platform 
+                        <br/><br/>Technologies: ReactJS, Tailwind, Node.js, MongoDB, Firebase, Express.js, Stripe etc.
+                    </p>
+                </div>
+                </div>  
+            </div>
+            <a href="#" class="btn"> See more</a>
+        </div>
+      </div>
+
+      <!-- contact -->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> rakak1mara@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>01558091046</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/raka-kamara" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/raka-kamara-850b461a4" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/raka.kamara.3" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@raka_kamara" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <a href="images/Raka Kamara.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Raka Kamara. All Rights Reserved.</p>
+        </div>
+       </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz7hb2S0i6VHz37kkE3seQhIbgZUWJjKXS4-7YpSDNdWsXlyFPV__AdDdUjA07sT9fJ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
